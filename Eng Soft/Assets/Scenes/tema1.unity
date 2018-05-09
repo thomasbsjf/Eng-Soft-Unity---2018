@@ -1209,6 +1209,7 @@ GameObject:
   - component: {fileID: 1698175422}
   - component: {fileID: 1698175424}
   - component: {fileID: 1698175423}
+  - component: {fileID: 1698175425}
   m_Layer: 5
   m_Name: Cenario
   m_TagString: Untagged
@@ -1276,6 +1277,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698175421}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1698175425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698175421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c247fc6e933d84ca105532acb5ffc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 1
 --- !u!1 &2088347435
 GameObject:
   m_ObjectHideFlags: 0
