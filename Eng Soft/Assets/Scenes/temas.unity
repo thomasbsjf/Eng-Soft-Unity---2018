@@ -3360,8 +3360,8 @@ MonoBehaviour:
   estrela3: {fileID: 522843292}
   nomeTema:
   - Selecione um tema
-  - Requisitos
   - Paradigmas
+  - Requisitos
   - Outros
   numeroQuestoes: 0
 --- !u!1 &2093974611
