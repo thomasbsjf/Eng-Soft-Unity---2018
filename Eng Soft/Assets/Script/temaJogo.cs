@@ -35,6 +35,7 @@ public class temaJogo : MonoBehaviour {
     public void selecioneTema(int i)
     {
         idTema = i;
+        PlayerPrefs.SetInt("idTema", idTema);
         txtNomeTema.text = nomeTema[idTema];
         int notaFinal = 0; // EDIT
         int acertos = 0; // EDIT

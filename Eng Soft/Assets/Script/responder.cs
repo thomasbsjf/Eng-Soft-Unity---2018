@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class responder : MonoBehaviour {
 
-    public int idTema;
+    
 
     public Text pergunta;
     public Text respostaA;
@@ -23,13 +23,15 @@ public class responder : MonoBehaviour {
     public string[] corretas; // corretas
 
     private int idPergunta;
-
+    private int idTema;
     private float acertos;
     private float questoes;
     private float media;
+    private int notaFinal;
 
     // Use this for initialization
     void Start () {
+        idTema = PlayerPrefs.GetInt("idTema");
         idPergunta = 0;
         questoes = perguntas.Length;
         pergunta.text = perguntas[idPergunta];
@@ -93,6 +95,18 @@ public class responder : MonoBehaviour {
         }
         else
         {
+            media = 10 * (acertos / questoes); //Calcula com base no percentual de acerto
+            notaFinal = Mathf.RoundToInt(media); //Arredonda
+
+            if(notaFinal > PlayerPrefs.GetInt("notaFinal" + idTema.ToString()))
+            {
+                PlayerPrefs.SetInt("notaFinal" + idTema.ToString(), notaFinal);
+                PlayerPrefs.SetInt("acertos" + idTema.ToString(), (int)acertos);
+            }
+
+            PlayerPrefs.SetInt("notaFinalTemp" + idTema.ToString(), notaFinal);
+            PlayerPrefs.SetInt("acertosTemp" + idTema.ToString(), (int)acertos);
+
             SceneManager.LoadScene("nota");
         }
     }
