@@ -9,4 +9,9 @@ public class comandosBasicos : MonoBehaviour {
     {
         SceneManager.LoadScene(nomeCena);
     }
+
+    public void resetarPontuacoes()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

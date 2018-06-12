@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/nota.unity
     guid: c90fb3813be6af74483c6db655bbe416
+  - enabled: 1
+    path: Assets/Scenes/tema2.unity
+    guid: dc9f0759214708545ba6910d0ee4ef9d
+  - enabled: 1
+    path: Assets/Scenes/tema3.unity
+    guid: f79c996a079c862479dc7d523976bbd4
   m_configObjects: {}
