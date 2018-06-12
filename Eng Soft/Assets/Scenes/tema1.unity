@@ -1014,7 +1014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88ea9dadeaa0094a917057ee1e50fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idTema: 0
   pergunta: {fileID: 52360672}
   respostaA: {fileID: 505320236}
   respostaB: {fileID: 1106849996}
@@ -1023,16 +1022,28 @@ MonoBehaviour:
   infoRespostas: {fileID: 129154029}
   perguntas:
   - "Qual desses n\xE3o \xE9 um paradigma de desenvolvimento?"
+  - "N\xE3o \xE9 um ponto positivo do Ciclo de Vida Cl\xE1ssico"
+  - "N\xE3o faz parte do Modelo Espiral."
   alternativaA:
   - "Metodologia \xC0gil"
+  - "Produz um padr\xE3o que podem ser usados novamente no futuro."
+  - Coleta inicial dos requisitos.
   alternativaB:
   - Cascata
+  - "Suas etapas s\xE3o semelhantes com outros paradigmas."
+  - "Prot\xF3tipo Inicial"
   alternativaC:
   - Batata
+  - "Problemas raramente seguem o fluxo que o modelo prop\xF5e."
+  - "Avalia\xE7\xE3o do Cliente"
   alternativaD:
   - Espiral
+  - Tem lugar definido e importante na Engenharia de Software.
+  - Sprint Backlog
   corretas:
   - Batata
+  - "Problemas raramente seguem o fluxo que o modelo prop\xF5e."
+  - Sprint Backlog
 --- !u!1 &1305650434
 GameObject:
   m_ObjectHideFlags: 0
